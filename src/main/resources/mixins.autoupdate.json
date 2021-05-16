@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "in.momin5.autoupdate",
+  "refmap": "mixins.cookie.refmap.json",
+  "mixins": [
+  ]
+}
