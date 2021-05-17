@@ -28,7 +28,7 @@ minecraft {
     version = project.forgeVersion
     runDir = 'run'
     mappings = project.mcpVersion
-    coreMod = 'in.momin5.autoupdate.AutoUpdateMod'
+    coreMod = 'in.momin5.autoupdate.mixin.Loader'
     makeObfSourceJar = false
 }
 
@@ -74,7 +74,7 @@ shadowJar {
 
 mixin {
     defaultObfuscationEnv searge
-    add sourceSets.main, 'mixins.cookie.refmap.json'
+    add sourceSets.main, 'mixins.autoupdate.refmap.json'
 }
 
 reobf {
@@ -91,7 +91,7 @@ jar {
                 'tweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
                 'FMLCorePluginContainsFMLMod': 'true',
-                'FMLCorePlugin': 'in.momin5.autoupdate.AutoUpdateMod',
+                'FMLCorePlugin': 'in.momin5.autoupdate.mixin.Loader',
                 'ForceLoadAsMod': 'true',
         )
     }

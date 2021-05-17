@@ -9,7 +9,7 @@ import java.net.URL;
 public class VersionManager {
 
     public static String versionURL = "https://pastebin.com/raw/pVPg66xe"; // for template / example
-    public static String modURL = "https://yourwebsite.com/myclient.jar"; // this can also be dont with heroku, if you cant afford a vps
+    public static String modURL = ""; // this can also be dont with heroku, if you cant afford a vps
 
     public static String getVersion() {
         String versionNumber = null;
@@ -25,23 +25,5 @@ public class VersionManager {
         }
         return versionNumber;
     }
-
- /*   public static void checkForUpdates(){
-        try {
-            PanelManager.UpdateFrame updateFrame = new PanelManager.UpdateFrame();
-            updateFrame.dispose();
-            if(!getVersion().equals(AutoUpdateMod.VERSION)){
-                PanelManager.FoundUpdate foundUpdate = new PanelManager.FoundUpdate();
-                FileManager.downloadFile();
-                foundUpdate.dispose();
-            }
-            if(FileManager.downloaded = true){
-                PanelManager.Updated frame = new PanelManager.Updated();
-                frame.dispose();
-                FMLCommonHandler.instance().exitJava(0,true);
-            }
-        }catch (Exception ignored){
-        }
-    }*/
 }
 

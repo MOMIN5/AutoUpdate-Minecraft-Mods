@@ -53,9 +53,8 @@ public class PanelManager {
             this.setLocationRelativeTo(null);
             this.setAlwaysOnTop(true);
             this.setSize(400,300);
-            this.setVisible(true);
             this.setBackground(new Color(116, 30, 30,255));
-
+            this.setVisible(true);
 
             JOptionPane.showMessageDialog(null,"Downloaded Updated loader in your desktop! Replace it with this one");
         }
