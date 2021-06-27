@@ -9,7 +9,7 @@ import java.net.URL;
 public class VersionManager {
 
     public static String versionURL = "https://pastebin.com/raw/pVPg66xe"; // for template / example
-    public static String modURL = ""; // this can also be dont with heroku, if you cant afford a vps
+    public static String modURL = ""; // this can also be done with heroku, if you cant afford a vps
 
     public static String getVersion() {
         String versionNumber = null;
